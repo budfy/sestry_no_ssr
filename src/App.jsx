@@ -2,6 +2,8 @@ import './App.scss';
 
 import { Route, Routes } from 'react-router';
 
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import { Helmet } from 'react-helmet';
 
 export default function App() {
@@ -16,13 +18,15 @@ export default function App() {
         {/* <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> */}
         <title>Sestry</title>
       </Helmet>
+      <Header />
     {/* <Routes> */}
     {/* <Route path="/"> */}
-    <div className="App">
+    <main className="main">
       HELLO!
-    </div>
+    </main>
     {/* </Route> */}
-    {/* </Routes> */}
+      {/* </Routes> */ }
+      <Footer />
   </>
   );
 }
