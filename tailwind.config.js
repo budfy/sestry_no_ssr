@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   theme: {
     fontFamily: {
-      sans: [],
-      title: []
+      sans: ["Arial"],
+      title: ["Times New Roman"]
     },
     extend: {
       typography: {
@@ -21,7 +26,4 @@ module.exports = {
       }
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
 }

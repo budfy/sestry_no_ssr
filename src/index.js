@@ -1,13 +1,14 @@
 import './index.scss';
 
-import {hydrate, render} from 'react-dom';
+import {createRoot, hydrateRoot} from 'react-dom/client';
 
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
 const rootElement = document.getElementById('root');
+const root = createRoot(rootElement)
 if (rootElement.hasChildNodes()) {
-  hydrate(<BrowserRouter><App /></BrowserRouter>, rootElement);
+  hydrateRoot(rootElement, <BrowserRouter><App /></BrowserRouter>);
 } else {
-  render(<BrowserRouter><App /></BrowserRouter>, rootElement);
+  root.render(<BrowserRouter><App /></BrowserRouter>);
 }
