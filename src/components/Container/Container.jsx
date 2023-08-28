@@ -1,14 +1,6 @@
-import classNames from 'classnames'
+import styled from 'styled-components'
 
-export default function Container(props) {
-  return (
-    <div
-      className={classNames(
-        'container max-w-full tablet-px-8 laptop-px-12 desctop-px-16',
-        props.className
-      )}
-    >
-      {props.children}
-    </div>
-  )
-}
+const Container = styled.div.attrs((props) => ({
+  className: 'container px-16'
+}))``
+export default Container

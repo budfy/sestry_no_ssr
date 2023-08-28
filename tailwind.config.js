@@ -25,5 +25,15 @@ module.exports = {
         }
       }
     },
+    screens: {
+      'mobile-s': '350px',
+      'mobile': '640px',
+      'tablet-s': '768px',
+      'tablet': '991px',
+      'desktop-s': '1024px',
+      'desktop': '1366px',
+      'desktop-l': '1600px',
+      'desktop-hd': '1920px'
+    }
   },
 }
