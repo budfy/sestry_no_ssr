@@ -5,6 +5,9 @@ import './App.scss'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import { Helmet } from 'react-helmet'
+import React from 'react'
+import faviconPng from './assets/icons/favicon.png'
+import faviconSvg from './assets/icons/favicon.svg'
 
 // import fbConfig from './config/firebase.config'
 // import { getAnalytics } from 'firebase/analytics'
@@ -23,7 +26,8 @@ export default function App() {
           content="width=device-width,initial-scale=1"
           name="viewport"
         ></meta>
-        {/* <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> */}
+        <link rel="shortcut icon" href={faviconSvg} type="image/svg+xml" />
+        <link rel="shortcut icon" href={faviconPng} type="image/png" />
         <title>Sestry</title>
       </Helmet>
       <div className="full-page flex w-full flex-col min-h-screen">

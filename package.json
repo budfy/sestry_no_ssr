@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@styled-icons/bootstrap": "^10.47.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -22,9 +23,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "yarn && react-scripts start",
-    "build": "yarn && react-scripts build",
-    "test": "yarn && react-scripts test",
+    "start": "yarn && craco start",
+    "start:no update": "craco start",
+    "build": "yarn && craco build",
+    "test": "yarn && craco test",
     "eject": "yarn && react-scripts eject",
     "build:production": "yarn && react-snap"
   },
@@ -56,8 +58,12 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@craco/craco": "^7.1.0",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.15",
+    "image-minimizer-webpack-plugin": "^3.8.3",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
     "postcss": "^8.4.27",
     "react-snap": "^1.23.0",
     "webpack-cli": "^5.1.4"
